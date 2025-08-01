@@ -13,11 +13,12 @@
     .status-ok { color: green; }
     .status-review { color: orange; }
     .footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+    ul { margin-top: 5px; margin-bottom: 0; }
   </style>
 </head>
 <body>
 
-<h1>SpielWerkCode â€“ Simple Games for Cognitively Impaired Users</h1>
+<h1>SpielWerkCode     Simple Games for Cognitively Impaired Users</h1>
 <p><em>Small games and custom jigsaw puzzles designed for people with cognitive impairments. Developed with care and simplicity.</em></p>
 
 <h2>Screenshots of SpielWerkCode games</h2>
@@ -55,13 +56,27 @@
   </tr>
   <tr>
     <td><strong>Runner</strong></td>
-    <td>Jumping cat  simple endless runner (in progress).</td>
+    <td>
+      Jumping cat, simple endless runner (in progress).<br><br>
+      <strong>Issues:</strong>
+      <ul>
+        <li>Game runs too fast on tablets ? use relative instead of absolute values</li>
+        <li>Background and obstacle speed need synchronization</li>
+        <li>Obstacles should appear randomly, avoiding back-to-back</li>
+        <li>Occasional crash just before switching back to start_screen</li>
+        <li><code>image_reward.gif</code> plays only partially after the first run:<br>
+          &emsp;• 1st run ? full playback<br>
+          &emsp;• 2nd run ? frame 1<br>
+          &emsp;• 3rd run ? frame 2, etc.
+        </li>
+      </ul>
+    </td>
     <td class="status-review">under review</td>
   </tr>
 </table>
 
 <h2>Interested in Collaborating?</h2>
-<p>Are you an experienced coder interested in collaborating or perhaps taking the lead, knowing that financial rewards may come later? If so, feel free to get in touch or ask for a look at my repository.</p>
+<p>Are you an experienced coder interested in collaborating or perhaps taking the lead, knowing that financial rewards may come later? If so, feel free to get in touch or ask for a look at my repository. Or download at ciloga.net</p>
 
 <div class="footer">
   &copy; 2025 SpielWerkCode by Lili
